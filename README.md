@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img alt="Modelo Conceitual" src="./.github/Modelo_Conceitual.jpeg">
+  <img alt="Modelo Conceitual" src="https://github.com/VivianneMiranda/Payroll/blob/main/Modelo_Conceitual.jpeg">
 </p> 
 
 ## ✨ Tecnologias
