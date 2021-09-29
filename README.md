@@ -28,7 +28,7 @@ Human Resources é uma plataforma onde podemos obter o nome e a folha de pagamen
     - Não é permitido acessar a lista de pagamentos de funcionários se não tiver o papel de ADMIN
 
 ## 🛠 Pré-requisitos
- Para roda a aplicação bastar ter o docker instalado na sua maquina:
+ Para roda a aplicação bastar ter o docker instalado na sua máquina:
  [Docker](https://www.docker.com/)
  
  Caso queira gerenciar o banco, recomendo usar o [DBeaver Community](https://dbeaver.io/)
