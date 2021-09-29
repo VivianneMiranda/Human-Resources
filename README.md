@@ -2,7 +2,7 @@
 
 <p align="center">
   
-  <img alt="Modelo Conceitual" src="https://github.com/VivianneMiranda/Payroll/blob/main/Modelo_Conceitual.jpeg" width="350">
+  <img alt="Modelo Conceitual" src="https://github.com/VivianneMiranda/Payroll/blob/main/Modelo_Conceitual.jpeg" width="500">
 </p> 
 
 ## ✨ Tecnologias
