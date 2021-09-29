@@ -1,12 +1,8 @@
 <h1 align="center">Payroll</h1>
 
 <p align="center">
-
-  <img src="/home/nestec007/Documents/workspace-spring-tool-suite-4-4.11.1.RELEASE/Modelo_Conceitual.jpeg" alt="Modelo Conceitual" />
-</p>
-
-<p align="center">
-  <img alt="Modelo Conceitual" src="https://github.com/VivianneMiranda/Payroll/blob/main/Modelo_Conceitual.jpeg">
+  
+  <img alt="Modelo Conceitual" src="https://github.com/VivianneMiranda/Payroll/blob/main/Modelo_Conceitual.jpeg" width="350">
 </p> 
 
 ## ✨ Tecnologias
