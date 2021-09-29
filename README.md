@@ -1,4 +1,4 @@
-<h1 align="center">Human Resources</h1>
+<h1 align="center">Human Resource</h1>
 
 <p align="center">
   <img alt="Modelo Conceitual" src="https://github.com/VivianneMiranda/Payroll/blob/main/Modelo_Conceitual.jpeg" width="500">
