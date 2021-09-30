@@ -1,0 +1,74 @@
+version: '3'
+
+services:
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "1234567"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /temp
+
+  hr-config-server:
+    container_name: hr-config-server
+    restart: always
+    build: ./config-server
+    ports: 
+      - "8888:8888"
+ 
+  hr-eureka-server:
+    container_name: hr-eureka-server
+    restart: always
+    build: ./eureka
+    ports: 
+      - "8761:8761" 
+  
+  hr-api-gateway-zuul:
+    container_name: hr-api-gateway-zuul
+    restart: always
+    build: ./gateway
+    ports: 
+      - "8765:8765"
+    depends_on:
+      - "hr-config-server" 
+      - "hr-eureka-server"
+  
+  hr-oauth:
+    container_name: hr-oauth
+    restart: always
+    build: ./oauth
+    depends_on:
+      - "hr-config-server" 
+      - "hr-eureka-server"    
+  
+  hr-payroll:
+    container_name: hr-payroll
+    restart: always
+    build: ./payroll
+    depends_on:
+      - "hr-config-server" 
+      - "hr-eureka-server"
+  
+  hr-user:
+    container_name: hr-user
+    restart: always
+    build: ./user
+    depends_on:
+      - "hr-config-server" 
+      - "hr-eureka-server" 
+      - "postgres" 
+  
+  hr-worker:
+    container_name: hr-worker
+    restart: always
+    build: ./worker
+    depends_on:
+      - "hr-config-server" 
+      - "hr-eureka-server" 
+      - "postgres"    
+      
+      
+  
